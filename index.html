@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IMCA Portfolio | Your Name</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            padding: 50px 8%;
+            background: white;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            color: #4f46e5;
+            margin-bottom: 10px;
+        }
+
+        .hero-text h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 7px solid #4f46e5;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #4f46e5;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #372fc2;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #4f46e5;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            background: #f5f7fa;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .education-card,
+        .project-card {
+            background: white;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .education-card h3,
+        .project-card h3 {
+            color: #4f46e5;
+            margin-bottom: 8px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #4f46e5;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+        }
+
+        .contact {
+            background: #1e1b4b;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #a5b4fc;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            background: #111827;
+            color: white;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+            }
+
+            .photo {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <h1>Hello, I'm Your Name</h1>
+
+            <h2>IMCA Student</h2>
+
+            <p>
+                Welcome to my personal portfolio. I am an Integrated
+                Master of Computer Applications (IMCA) student interested
+                in software development, web development and technology.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <!-- Add your photo here -->
+        <img src="your-photo.jpg"
+             alt="Your Profile Photo"
+             class="photo">
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am currently pursuing IMCA and developing my knowledge in
+            programming, web development, databases and software
+            development. I enjoy learning new technologies and building
+            useful projects.
+        </p>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="education-card">
+
+            <h3>Integrated Master of Computer Applications (IMCA)</h3>
+
+            <p><strong>College:</strong> Your College Name</p>
+
+            <p><strong>University:</strong> Your University Name</p>
+
+            <p><strong>Year:</strong> 2022 - 2027</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section class="about" id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Java</span>
+            <span class="skill">Python</span>
+            <span class="skill">C</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Git & GitHub</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="project-card">
+
+            <h3>1. Student Management System</h3>
+
+            <p>
+                A project for managing student information, including
+                student records, marks and basic details.
+            </p>
+
+            <p><strong>Technologies:</strong> Java, MySQL</p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>2. Personal Portfolio Website</h3>
+
+            <p>
+                A responsive personal portfolio website created to
+                showcase my education, skills, projects and achievements.
+            </p>
+
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>3. Your Project Name</h3>
+
+            <p>
+                Add a short description of your project here.
+            </p>
+
+            <p><strong>Technologies:</strong> Add technologies here</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>Email:
+            <a href="mailto:your@email.com">
+                your@email.com
+            </a>
+        </p>
+
+        <p>GitHub:
+            <a href="https://github.com/yourusername" target="_blank">
+                github.com/yourusername
+            </a>
+        </p>
+
+        <p>LinkedIn:
+            <a href="#" target="_blank">
+                My LinkedIn Profile
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Your Name | IMCA Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
